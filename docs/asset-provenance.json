@@ -1,0 +1,72 @@
+{
+  "originalsSha256Verified": true,
+  "prompts": "docs/image-prompts.json",
+  "assets": [
+    {
+      "processed": "resources/sprites/00_applele_plush.png",
+      "original": "resources/originals/常态苹果乐.jpg",
+      "processing": "玩偶主体透明提取，保留毛绒质感",
+      "method": "imagegen AI-assisted transparent extraction and detail reconstruction, not lossless masking",
+      "sourceKind": "single static reference image",
+      "animationKind": "runtime procedural mesh deformation and easing, no artist-drawn frame sequence",
+      "sha256": "DCDD4ACCD5AC2F76461038B06B3771EFB00174FFE2326A01777D4A79C5565B3F"
+    },
+    {
+      "processed": "resources/sprites/01_reaction_a.png",
+      "original": "resources/originals/动作一.png",
+      "processing": "去除文字与截图背景，保留动作A",
+      "method": "imagegen AI-assisted transparent extraction and detail reconstruction, not lossless masking",
+      "sourceKind": "single static reference image",
+      "animationKind": "runtime procedural mesh deformation and easing, no artist-drawn frame sequence",
+      "sha256": "B9A7AE906DC48858D4BB83EF56207344F60559BB72E4AE8E037EFC95BEA2B13B"
+    },
+    {
+      "processed": "resources/sprites/02_reaction_b.png",
+      "original": "resources/originals/动作二.png",
+      "processing": "去除文字与背景，保留动作B及酒杯",
+      "method": "imagegen AI-assisted transparent extraction and detail reconstruction, not lossless masking",
+      "sourceKind": "single static reference image",
+      "animationKind": "runtime procedural mesh deformation and easing, no artist-drawn frame sequence",
+      "sha256": "82274D132388979FC70661133A7C6A688DEA695313F257171A64E5159D5DFEE5"
+    },
+    {
+      "processed": "resources/sprites/03_ex1.png",
+      "original": "resources/originals/精一.png",
+      "processing": "提取角色、持枪与光环，保留源图裁切；透明区域RGB色彩不参与显示",
+      "method": "imagegen AI-assisted transparent extraction and detail reconstruction, not lossless masking",
+      "sourceKind": "single static reference image",
+      "animationKind": "runtime procedural mesh deformation and easing, no artist-drawn frame sequence",
+      "sha256": "31F12A92E4E07EFA10D09F49D21F36FA46EDC75356688F12D9D9DBE04D5203C1"
+    },
+    {
+      "processed": "resources/sprites/04_ex2.png",
+      "original": "resources/originals/精二.png",
+      "processing": "提取角色、手持武器与光环，去除背景悬浮武器阵列",
+      "method": "imagegen AI-assisted transparent extraction and detail reconstruction, not lossless masking",
+      "sourceKind": "single static reference image",
+      "animationKind": "runtime procedural mesh deformation and easing, no artist-drawn frame sequence",
+      "sha256": "011B9E0AA765816C65C8B059B07E99412B3E9230E54D74AB74C13254320A42ED"
+    },
+    {
+      "processed": "resources/sprites/05_alter_ex1.png",
+      "original": "resources/originals/异格精一.png",
+      "processing": "提取角色、衣摆与装备，保留裁切，增加透明留白防止边缘截断",
+      "method": "imagegen AI-assisted transparent extraction and detail reconstruction, not lossless masking",
+      "sourceKind": "single static reference image",
+      "animationKind": "runtime procedural mesh deformation and easing, no artist-drawn frame sequence",
+      "sha256": "A656B5C9F70931099314652F7C8090BB990383CF90F51862A930241C7B053ABE"
+    },
+    {
+      "processed": "resources/sprites/06_alter_ex2.png",
+      "original": "resources/originals/异格精二.png",
+      "processing": "提取角色、举起武器与光环，保留抬腿姿态，去除爆炸背景",
+      "method": "imagegen AI-assisted transparent extraction and detail reconstruction, not lossless masking",
+      "sourceKind": "single static reference image",
+      "animationKind": "runtime procedural mesh deformation and easing, no artist-drawn frame sequence",
+      "sha256": "BF8918B4B85E6B9F8E8583435F3496D5B42D2CE4224A9B792F78F7B0B5B9DD77"
+    }
+  ],
+  "legacySingleImageAnimationsAreProcedural": true,
+  "aiRedrawnCharacterCels": "docs/character-motion-assets.json",
+  "scope": "This seven-cutout manifest describes preserved sprites only; new full-body character cels and inferred legs/boots are documented separately."
+}

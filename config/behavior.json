@@ -1,0 +1,190 @@
+{
+  "profiles": [
+    {
+      "id": "playful-plush",
+      "decisionWaitMin": 20,
+      "decisionWaitMax": 46,
+      "restWeight": 78,
+      "specialSpacingSeconds": 150,
+      "edgePreference": 0.25,
+      "behaviors": [
+        {
+          "id": "short-walk",
+          "kind": "Walk",
+          "weight": 20,
+          "waitMin": 16,
+          "waitMax": 28,
+          "durationMin": 2.4,
+          "durationMax": 3.6,
+          "cooldownMin": 35,
+          "cooldownMax": 65,
+          "distanceMin": 30,
+          "distanceMax": 78,
+          "startupCooldown": false,
+          "allowedStates": [
+            "Idle"
+          ]
+        },
+        {
+          "id": "silly-hop",
+          "kind": "Hop",
+          "weight": 1,
+          "waitMin": 18,
+          "waitMax": 30,
+          "durationMin": 1.1,
+          "durationMax": 1.35,
+          "cooldownMin": 180,
+          "cooldownMax": 300,
+          "distanceMin": 0,
+          "distanceMax": 0,
+          "startupCooldown": true,
+          "allowedStates": [
+            "Idle"
+          ]
+        },
+        {
+          "id": "silly-dash",
+          "kind": "Dash",
+          "weight": 0.6,
+          "waitMin": 22,
+          "waitMax": 38,
+          "durationMin": 0.9,
+          "durationMax": 1.2,
+          "cooldownMin": 240,
+          "cooldownMax": 420,
+          "distanceMin": 70,
+          "distanceMax": 135,
+          "startupCooldown": true,
+          "allowedStates": [
+            "Idle"
+          ]
+        },
+        {
+          "id": "silly-shake",
+          "kind": "Shake",
+          "weight": 0.4,
+          "waitMin": 24,
+          "waitMax": 42,
+          "durationMin": 1.05,
+          "durationMax": 1.3,
+          "cooldownMin": 240,
+          "cooldownMax": 420,
+          "distanceMin": 0,
+          "distanceMax": 0,
+          "startupCooldown": true,
+          "allowedStates": [
+            "Idle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex1-personality",
+      "decisionWaitMin": 26,
+      "decisionWaitMax": 52,
+      "restWeight": 86,
+      "specialSpacingSeconds": 180,
+      "edgePreference": 0.2,
+      "behaviors": [
+        {
+          "id": "short-walk",
+          "kind": "Walk",
+          "weight": 14,
+          "waitMin": 25.5,
+          "waitMax": 34,
+          "durationMin": 1.2,
+          "durationMax": 1.7,
+          "cooldownMin": 45,
+          "cooldownMax": 80,
+          "distanceMin": 88,
+          "distanceMax": 125,
+          "startupCooldown": false,
+          "allowedStates": [
+            "Idle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ex2-personality",
+      "decisionWaitMin": 34,
+      "decisionWaitMax": 70,
+      "restWeight": 93,
+      "specialSpacingSeconds": 180,
+      "edgePreference": 0.2,
+      "behaviors": [
+        {
+          "id": "short-walk",
+          "kind": "Walk",
+          "weight": 7,
+          "waitMin": 33.5,
+          "waitMax": 42,
+          "durationMin": 2.8,
+          "durationMax": 4,
+          "cooldownMin": 65,
+          "cooldownMax": 110,
+          "distanceMin": 22,
+          "distanceMax": 52,
+          "startupCooldown": false,
+          "allowedStates": [
+            "Idle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alter-ex1-personality",
+      "decisionWaitMin": 24,
+      "decisionWaitMax": 50,
+      "restWeight": 88,
+      "specialSpacingSeconds": 180,
+      "edgePreference": 0.2,
+      "behaviors": [
+        {
+          "id": "short-walk",
+          "kind": "Walk",
+          "weight": 12,
+          "waitMin": 23.5,
+          "waitMax": 32,
+          "durationMin": 2.8,
+          "durationMax": 4,
+          "cooldownMin": 45,
+          "cooldownMax": 75,
+          "distanceMin": 32,
+          "distanceMax": 72,
+          "startupCooldown": false,
+          "allowedStates": [
+            "Idle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alter-ex2-personality",
+      "decisionWaitMin": 40,
+      "decisionWaitMax": 80,
+      "restWeight": 95,
+      "specialSpacingSeconds": 180,
+      "edgePreference": 0.2,
+      "behaviors": [
+        {
+          "id": "short-walk",
+          "kind": "Walk",
+          "weight": 5,
+          "waitMin": 39.5,
+          "waitMax": 48,
+          "durationMin": 2.8,
+          "durationMax": 4,
+          "cooldownMin": 80,
+          "cooldownMax": 130,
+          "distanceMin": 20,
+          "distanceMax": 48,
+          "startupCooldown": false,
+          "allowedStates": [
+            "Idle"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,533 @@
+{
+  "initialForm": "plush",
+  "roaming": {
+    "speedDipPerSecond": 95,
+    "pauseMinSeconds": 1.2,
+    "pauseMaxSeconds": 3,
+    "edgeInsetDip": 10,
+    "maxLegSeconds": 45,
+    "allowSpecialDuringRoaming": true,
+    "accelerationSeconds": 0.28
+  },
+  "canvasSizeDip": 320,
+  "spriteSizeDip": 232,
+  "idleFps": 15,
+  "actionFps": 30,
+  "hitAlphaThreshold": 20,
+  "forms": [
+    {
+      "id": "plush",
+      "name": "苹果乐玩偶",
+      "inIllustrationCycle": false,
+      "behaviorProfileId": "playful-plush",
+      "idle": {
+        "file": "resources/sprites/00_applele_plush.png",
+        "provenance": "AI 提取的单张透明图；不是逐帧动画"
+      },
+      "reactions": [
+        {
+          "file": "resources/sprites/01_reaction_a.png",
+          "provenance": "动作一参考图的透明提取，程序分阶段播放"
+        },
+        {
+          "file": "resources/sprites/02_reaction_b.png",
+          "provenance": "动作二参考图的透明提取，程序分阶段播放"
+        }
+      ],
+      "reaction": {
+        "anticipationSeconds": 0.16,
+        "expressionSeconds": 0.85,
+        "recoverySeconds": 0.32,
+        "cooldownSeconds": 0.3
+      }
+    },
+    {
+      "id": "ex1",
+      "name": "能天使 · 精一",
+      "inIllustrationCycle": true,
+      "behaviorProfileId": "ex1-personality",
+      "idle": {
+        "file": "resources/sprites/03_ex1.png",
+        "provenance": "AI提取与细节修复的静态立绘；保持原图裁切；没有真正的动作帧"
+      },
+      "reactions": [],
+      "reaction": {
+        "anticipationSeconds": 0.1,
+        "expressionSeconds": 0.42,
+        "recoverySeconds": 0.18,
+        "cooldownSeconds": 0.35
+      },
+      "animation": {
+        "rig": "portrait",
+        "styleId": "ex1-approved-distance-walk-v2",
+        "reactionAName": "举手比耶",
+        "reactionBName": "轻挥招呼",
+        "spriteSizeDip": 248,
+        "idleCycleSeconds": 3.3,
+        "walkCycleSeconds": 0.8,
+        "idleLift": 0.7,
+        "idleRoll": 0.45,
+        "walkLift": 2.2,
+        "walkRoll": 1.15,
+        "reactionALift": 3.8,
+        "reactionARoll": -1.7,
+        "reactionBLift": 1.6,
+        "reactionBRoll": 2.1,
+        "anchors": [
+          {
+            "label": "V-sign hand",
+            "x": 0.27,
+            "y": 0.2,
+            "radiusX": 0.24,
+            "radiusY": 0.24,
+            "idleX": 0.5,
+            "walkX": 1.5,
+            "walkY": -1.2,
+            "reactionAX": 5,
+            "reactionAY": -5,
+            "reactionBX": 1.5,
+            "reactionBY": 0
+          },
+          {
+            "label": "head and hair",
+            "x": 0.6,
+            "y": 0.26,
+            "radiusX": 0.37,
+            "radiusY": 0.22,
+            "phaseOffset": 1,
+            "idleX": 0.55,
+            "walkX": 1.1,
+            "reactionAX": -1,
+            "reactionAY": 0,
+            "reactionBX": 3,
+            "reactionBY": -1
+          }
+        ]
+      },
+      "frames": {
+        "provenance": "AI-redrawn articulated key cels; missing lower legs and boots inferred; not official artwork or a complete hand-animated sequence",
+        "actions": {
+          "texture": {
+            "file": "resources/animations/ex1/actions-v1.png",
+            "provenance": "AI-redrawn two four-cel click gestures with full-body completion"
+          },
+          "columns": 4,
+          "rows": 2,
+          "useTransparentGutters": false
+        },
+        "walk": {
+          "texture": {
+            "file": "resources/animations/ex1/walk-approved-v2.png",
+            "provenance": "AI-redrawn eight cels reviewed and accepted with reservations by the user; legs and boots inferred"
+          },
+          "columns": 4,
+          "rows": 2,
+          "useTransparentGutters": false
+        },
+        "neutralFrame": 0,
+        "walkOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "reactionA": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "reactionB": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "blendWalkFrames": false,
+        "blendReactionFrames": false,
+        "playback": {
+          "cycleDistanceDip": 84,
+          "sourceFacing": 1,
+          "fitWholeSteps": true
+        }
+      }
+    },
+    {
+      "id": "ex2",
+      "name": "能天使 · 精二",
+      "inIllustrationCycle": true,
+      "behaviorProfileId": "ex2-personality",
+      "idle": {
+        "file": "resources/sprites/04_ex2.png",
+        "provenance": "AI提取与细节修复的静态立绘；保持原图裁切；没有真正的动作帧"
+      },
+      "reactions": [],
+      "reaction": {
+        "anticipationSeconds": 0.14,
+        "expressionSeconds": 0.45,
+        "recoverySeconds": 0.21,
+        "cooldownSeconds": 0.35
+      },
+      "animation": {
+        "rig": "portrait",
+        "styleId": "ex2-ai-keyframes-v1",
+        "reactionAName": "胸前致意",
+        "reactionBName": "点头回应",
+        "spriteSizeDip": 246,
+        "idleCycleSeconds": 4.2,
+        "walkCycleSeconds": 0.92,
+        "idleLift": 0.45,
+        "idleRoll": 0.3,
+        "walkLift": 1.4,
+        "walkRoll": 0.75,
+        "reactionALift": 2.6,
+        "reactionARoll": 1.2,
+        "reactionBLift": 1.2,
+        "reactionBRoll": -1.5,
+        "anchors": [
+          {
+            "label": "salute hand",
+            "x": 0.43,
+            "y": 0.43,
+            "radiusX": 0.25,
+            "radiusY": 0.22,
+            "idleY": 0.3,
+            "walkY": 0.7,
+            "reactionAX": -2.5,
+            "reactionAY": -5,
+            "reactionBX": 0,
+            "reactionBY": 1.5
+          },
+          {
+            "label": "held weapon",
+            "x": 0.35,
+            "y": 0.83,
+            "radiusX": 0.3,
+            "radiusY": 0.27,
+            "phaseOffset": 1.5,
+            "idleX": 0.2,
+            "walkX": 0.7,
+            "reactionAX": 0.8,
+            "reactionAY": -1,
+            "reactionBX": 2.8,
+            "reactionBY": -3
+          }
+        ]
+      },
+      "frames": {
+        "provenance": "AI-redrawn articulated key cels; missing lower legs and boots inferred; not official artwork or a complete hand-animated sequence",
+        "actions": {
+          "texture": {
+            "file": "resources/animations/ex2/actions-v1.png",
+            "provenance": "AI-redrawn two four-cel click gestures with full-body completion"
+          },
+          "columns": 4,
+          "rows": 2,
+          "useTransparentGutters": false
+        },
+        "walk": {
+          "texture": {
+            "file": "resources/animations/ex2/walk-v1.png",
+            "provenance": "AI-redrawn eight-cel articulated stepping cycle"
+          },
+          "columns": 4,
+          "rows": 2,
+          "useTransparentGutters": true
+        },
+        "neutralFrame": 0,
+        "walkOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "reactionA": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "reactionB": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "blendWalkFrames": false,
+        "blendReactionFrames": false
+      }
+    },
+    {
+      "id": "alter-ex1",
+      "name": "能天使 · 异格精一",
+      "inIllustrationCycle": true,
+      "behaviorProfileId": "alter-ex1-personality",
+      "idle": {
+        "file": "resources/sprites/05_alter_ex1.png",
+        "provenance": "AI提取与细节修复的静态立绘；保持原图裁切；没有真正的动作帧"
+      },
+      "reactions": [],
+      "reaction": {
+        "anticipationSeconds": 0.1,
+        "expressionSeconds": 0.38,
+        "recoverySeconds": 0.18,
+        "cooldownSeconds": 0.35
+      },
+      "animation": {
+        "rig": "portrait",
+        "styleId": "alter-ex1-ai-keyframes-v1",
+        "reactionAName": "举手比耶",
+        "reactionBName": "衣摆轻扬",
+        "spriteSizeDip": 250,
+        "idleCycleSeconds": 2.9,
+        "walkCycleSeconds": 0.78,
+        "idleLift": 1,
+        "idleRoll": 0.55,
+        "walkLift": 2.5,
+        "walkRoll": 1,
+        "reactionALift": 3.3,
+        "reactionARoll": 1.8,
+        "reactionBLift": 2.1,
+        "reactionBRoll": -2.2,
+        "anchors": [
+          {
+            "label": "raised hand",
+            "x": 0.82,
+            "y": 0.24,
+            "radiusX": 0.23,
+            "radiusY": 0.22,
+            "idleX": 0.4,
+            "walkX": 1.2,
+            "reactionAX": 3.5,
+            "reactionAY": -4,
+            "reactionBX": -1,
+            "reactionBY": 1
+          },
+          {
+            "label": "coat lining",
+            "x": 0.25,
+            "y": 0.73,
+            "radiusX": 0.3,
+            "radiusY": 0.3,
+            "phaseOffset": 1.1,
+            "idleX": 1,
+            "walkX": 3.8,
+            "reactionAX": -1,
+            "reactionAY": 0,
+            "reactionBX": 6,
+            "reactionBY": -2
+          },
+          {
+            "label": "hair tips",
+            "x": 0.44,
+            "y": 0.23,
+            "radiusX": 0.32,
+            "radiusY": 0.2,
+            "phaseOffset": 2,
+            "idleX": 0.7,
+            "walkX": 1.8,
+            "reactionAX": 1,
+            "reactionAY": -1,
+            "reactionBX": 2,
+            "reactionBY": 0
+          }
+        ]
+      },
+      "frames": {
+        "provenance": "AI-redrawn articulated key cels; missing lower legs and boots inferred; not official artwork or a complete hand-animated sequence",
+        "actions": {
+          "texture": {
+            "file": "resources/animations/alter-ex1/actions-v1.png",
+            "provenance": "AI-redrawn two four-cel click gestures with full-body completion"
+          },
+          "columns": 4,
+          "rows": 2,
+          "useTransparentGutters": true
+        },
+        "walk": {
+          "texture": {
+            "file": "resources/animations/alter-ex1/walk-v1.png",
+            "provenance": "AI-redrawn eight-cel articulated stepping cycle"
+          },
+          "columns": 2,
+          "rows": 2,
+          "useTransparentGutters": true
+        },
+        "neutralFrame": 0,
+        "walkOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "reactionA": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "reactionB": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "blendWalkFrames": false,
+        "blendReactionFrames": false,
+        "walkContinuation": {
+          "texture": {
+            "file": "resources/animations/alter-ex1/walk-b-v1.png",
+            "provenance": "AI-redrawn second half of the articulated walk cycle"
+          },
+          "columns": 2,
+          "rows": 2,
+          "useTransparentGutters": true
+        }
+      }
+    },
+    {
+      "id": "alter-ex2",
+      "name": "能天使 · 异格精二",
+      "inIllustrationCycle": true,
+      "behaviorProfileId": "alter-ex2-personality",
+      "idle": {
+        "file": "resources/sprites/06_alter_ex2.png",
+        "provenance": "AI提取与细节修复的静态立绘；保持原图裁切；没有真正的动作帧"
+      },
+      "reactions": [],
+      "reaction": {
+        "anticipationSeconds": 0.14,
+        "expressionSeconds": 0.5,
+        "recoverySeconds": 0.22,
+        "cooldownSeconds": 0.35
+      },
+      "animation": {
+        "rig": "portrait",
+        "styleId": "alter-ex2-ai-keyframes-v1",
+        "reactionAName": "从容点头",
+        "reactionBName": "举手招呼",
+        "spriteSizeDip": 252,
+        "idleCycleSeconds": 4.6,
+        "walkCycleSeconds": 1.0,
+        "idleLift": 0.4,
+        "idleRoll": 0.22,
+        "walkLift": 1.1,
+        "walkRoll": 0.6,
+        "reactionALift": 1.8,
+        "reactionARoll": -1,
+        "reactionBLift": 2.4,
+        "reactionBRoll": 1.4,
+        "anchors": [
+          {
+            "label": "head",
+            "x": 0.63,
+            "y": 0.34,
+            "radiusX": 0.25,
+            "radiusY": 0.18,
+            "idleY": 0.2,
+            "walkY": 0.8,
+            "reactionAX": 0,
+            "reactionAY": 3.5,
+            "reactionBX": 1,
+            "reactionBY": -1
+          },
+          {
+            "label": "overhead weapon",
+            "x": 0.55,
+            "y": 0.12,
+            "radiusX": 0.4,
+            "radiusY": 0.2,
+            "phaseOffset": 0.8,
+            "idleY": 0.3,
+            "walkY": 1.2,
+            "reactionAX": 0,
+            "reactionAY": -0.5,
+            "reactionBX": 2.5,
+            "reactionBY": -5
+          },
+          {
+            "label": "coat ribbon",
+            "x": 0.83,
+            "y": 0.73,
+            "radiusX": 0.25,
+            "radiusY": 0.25,
+            "phaseOffset": 1.6,
+            "idleX": 0.6,
+            "walkX": 2.6,
+            "reactionAX": 1,
+            "reactionAY": 0,
+            "reactionBX": 4,
+            "reactionBY": -1
+          }
+        ]
+      },
+      "frames": {
+        "provenance": "AI-redrawn articulated key cels; missing lower legs and boots inferred; not official artwork or a complete hand-animated sequence",
+        "actions": {
+          "texture": {
+            "file": "resources/animations/alter-ex2/actions-v1.png",
+            "provenance": "AI-redrawn two four-cel click gestures with full-body completion"
+          },
+          "columns": 4,
+          "rows": 2,
+          "useTransparentGutters": false
+        },
+        "walk": {
+          "texture": {
+            "file": "resources/animations/alter-ex2/walk-v1.png",
+            "provenance": "AI-redrawn eight-cel articulated stepping cycle"
+          },
+          "columns": 2,
+          "rows": 2,
+          "useTransparentGutters": true
+        },
+        "neutralFrame": 0,
+        "walkOrder": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "reactionA": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "reactionB": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "blendWalkFrames": false,
+        "blendReactionFrames": false,
+        "walkContinuation": {
+          "texture": {
+            "file": "resources/animations/alter-ex2/walk-b-v1.png",
+            "provenance": "AI-redrawn second half of the articulated walk cycle"
+          },
+          "columns": 2,
+          "rows": 2,
+          "useTransparentGutters": true
+        }
+      }
+    }
+  ]
+}

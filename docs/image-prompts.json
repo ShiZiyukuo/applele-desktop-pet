@@ -1,0 +1,54 @@
+[
+  {
+    "target": "resources/sprites/00_applele_plush.png",
+    "source": "resources/originals/常态苹果乐.jpg",
+    "tool": "built-in image_gen",
+    "kind": "AI background extraction with detail reconstruction; single static image",
+    "prompt": "Extract ONLY the existing round red Applele plush toy from the supplied merchandise photograph. Remove the entire yellow promotional background, table, glass, confetti, logo, text, border and UI. Preserve the original toy design exactly: red round apple plush body, dark red fabric hair, golden eye, winking/covered other eye, small smiling mouth, white fabric hands and feet, dark stem and yellow green leaf. Preserve pose, photographic fabric texture, colors and face. Do not redesign, do not turn into a cartoon, no added limbs, no invented accessories. Single toy centered, entire existing toy visible with a little transparent padding. True RGBA transparent background, no ground shadow, no text, no white border, no checkerboard baked in. This is a desktop pet sprite cutout, not a new illustration."
+  },
+  {
+    "target": "resources/sprites/01_reaction_a.png",
+    "source": "resources/originals/动作一.png",
+    "tool": "built-in image_gen",
+    "kind": "AI extraction plus a framing correction; single static image",
+    "prompt": "Extract ONLY the existing Applele plush from this meme screenshot. Completely remove the gray/white screenshot background, borders and all black caption text. Preserve this specific open-mouth surprised/silly reaction A face, red round apple plush body, dark red hair, one golden eye, white hands and feet, green leaf and brown stem. Keep original pose and appearance, retain soft fabric texture, carefully restore only blurred edges, do not change design or expression or add accessories. Single isolated toy centered, true RGBA transparent background, no cast shadow, no text, no white rectangle or outline, no checkerboard. Production desktop pet reaction A cutout.",
+    "revisionPrompt": "Edit target: this extracted Applele plush reaction A. Change ONLY the canvas framing: make the entire existing plush including the full green leaf fit comfortably inside the transparent canvas with at least 10 percent clear transparent padding at ALL four edges. The leaf is currently touching the top and must not be clipped. Keep the subject's exact design, expression, fabric texture, red hair, golden eye, hands/feet, proportions and pose. Remove any detached colored pixel specks around the silhouette. Do not add text, accessories, shadow or background. True RGBA transparent canvas; no checkerboard or white matte. Desktop pet static reaction cutout."
+  },
+  {
+    "target": "resources/sprites/02_reaction_b.png",
+    "source": "resources/originals/动作二.png",
+    "tool": "built-in image_gen",
+    "kind": "AI background extraction with detail reconstruction; single static image",
+    "prompt": "Extract ONLY the existing Applele plush AND the small wineglass in its hand from the supplied reaction meme screenshot. Completely remove all screenshot gray/white background, margins, UI and all black Chinese caption text. Preserve the existing red apple-shaped plush, fabric hair, face and expression, white small hands/feet, green leaf and brown stem, and glass filled with red wine held at viewer left. Do not change the face or toy design, no added accessories. Retain original pose and photographic plush texture. Single isolated subject centered on actual RGBA transparency, no ground shadow, no white rectangle, no white outline, no checkerboard. This is reaction B of a desktop pet."
+  },
+  {
+    "target": "resources/sprites/03_ex1.png",
+    "source": "resources/originals/精一.png",
+    "tool": "built-in image_gen",
+    "kind": "AI-extracted static portrait with detail reconstruction; original crop retained; procedural animation, no authored walk frames",
+    "prompt": "Use case: background-extraction. Input is an edit target: the supplied Arknights Exusiai elite 1 screenshot, NOT a style reference for a redesigned character. Extract ONLY the visible character and her thin floating halo into one genuine RGBA transparent desktop sprite. Remove all black/white background graphics, screenshot borders, buttons, mute icon and UI. Preserve exactly the character's burgundy-red short hair, golden eye, white/black courier jacket with hot-pink accents, belt, black skirt/shorts, raised gloved V-sign hand and relaxed face; preserve the drawn anime art style and original pose. Preserve the existing visible extent: lower body is cropped at the same point as this screenshot; do NOT invent new legs or convert to a full-body pose. Put the entire existing cropped character and full halo inside a transparent square/portrait canvas with at least 10 percent transparent padding on all four edges, INCLUDING below the crop. No background, ground shadow, white matte, checkerboard, logos outside the clothing, text or extra props. Do not crop the halo or fingertips. Faithful subject extraction and minimal edge reconstruction only.",
+    "revisionPrompt": "Background extraction CORRECTION. Keep this exact character cutout, outfit, burgundy hair, face, V-sign pose and thin halo unchanged. REMOVE EVERY BIT of the large soft colored/brown/gray glow and diffuse background haze behind and around her; it is unwanted background, not part of the character. The negative space around the head, between hand and head, inside the floating halo, below the cropped body, and all outside body silhouette must be strictly alpha=0. Preserve only the actual thin halo ring, hair strands, hands, clothes and attached gear, with narrow 1-pixel antialiasing at their edges. No bloom, atmosphere, shadows, colored aura, semitransparent backdrop, checkerboard, white/black matte. Reduce the figure slightly to leave at least 6 percent fully transparent padding around all sides including below the lower crop. No new body parts or invented full legs. True clean RGBA PNG for a desktop pet."
+  },
+  {
+    "target": "resources/sprites/04_ex2.png",
+    "source": "resources/originals/精二.png",
+    "tool": "built-in image_gen",
+    "kind": "AI-extracted static portrait with detail reconstruction; original crop retained; procedural animation, no authored walk frames",
+    "prompt": "Use case: background-extraction. Edit target: supplied Exusiai elite 2 screenshot. Extract the central visible burgundy-haired golden-eyed character, thin floating halo and the gun she directly holds, on actual RGBA transparency. Remove the black/white graphic scene, large circular backdrop, radiating array of floating guns behind her, debris, all screenshot UI, hanger icon, buttons, mute icon, borders and text. Preserve her exact outfit (white/black courier jacket, hot-pink details, dark shorts), face, hairstyle, hands, leaning pose and held weapon; no outfit redesign or extra limbs. Keep original anime illustration appearance. Keep the SAME lower crop as source, do not invent unseen legs. Center the full existing cutout on a transparent canvas, retaining all halo/hair/held gun with 10 percent empty transparent padding all sides, even below the cropped bottom. No white rectangle, checkerboard, cast shadow or solid halo disc. This is one static character cutout for procedural animation, not a new pose."
+  },
+  {
+    "target": "resources/sprites/05_alter_ex1.png",
+    "source": "resources/originals/异格精一.png",
+    "tool": "built-in image_gen",
+    "kind": "AI-extracted static portrait with detail reconstruction; original crop retained; procedural animation, no authored walk frames",
+    "prompt": "Use case: background-extraction. Edit target: supplied red-haired Exusiai alter elite 1 screenshot. Extract ONLY the visible character with her thin floating halo, raised gloved V-sign hand, long dark coat, white/gray outfit, thigh straps and attached personal equipment. Remove the blue sky, buildings, ocean, scenery, screenshot borders, mute button and all UI. Preserve bright scarlet-red hair, golden eyes, face expression, original pose, black/white outfit, dark coat with deep red lining and all garment design; keep the original detailed anime illustration style. Do not change to another costume or pose and do not invent unseen lower legs: the character remains cropped at the source's existing lower boundary. Center complete existing cropped figure plus full halo and hand with at least 10 percent truly transparent padding at every edge, also below crop. Background must be actual RGBA alpha, no white/black matte, checkerboard, shadow or caption. Minimal edge reconstruction only.",
+    "revisionPrompt": "Canvas framing correction ONLY for this already extracted transparent character sprite. Preserve all existing pixels of the character, face, red hair, outfit, raised V-sign hand, halo, equipment and cropped lower body as closely as possible. Do not redraw the design or add body parts. Scale the ENTIRE existing subject down so it occupies at most 80 percent of the canvas width AND 80 percent of the canvas height. Center it with strictly alpha=0 padding on ALL FOUR SIDES. The left coat edge currently touches the image border and must be separated from the border by transparent empty space; also leave transparent padding below the existing cropped thighs. No sky, no scenery, no background, no glow, no white/black matte, no text, no checkerboard. True RGBA PNG with zero-alpha outermost rows and columns."
+  },
+  {
+    "target": "resources/sprites/06_alter_ex2.png",
+    "source": "resources/originals/异格精二.png",
+    "tool": "built-in image_gen",
+    "kind": "AI-extracted static portrait with detail reconstruction; original crop retained; procedural animation, no authored walk frames",
+    "prompt": "Use case: background-extraction. Edit target is supplied Exusiai alter elite 2 illustration screenshot. Extract ONLY the existing visible scarlet-haired golden-eyed character in the original raised-knee/seated pose, including thin halo, her black/white outfit, dark long coat/red ribbons, gloves and the long weapon she holds overhead. Completely remove the yellow-orange explosion, white abstract scenery, floor/debris, geometric boxes, screenshot UI, mute icon, corner icon and borders. Preserve the original pose, face, hair, clothing silhouette and connected held weapon; do NOT stand the character up, redesign, add limbs, invent missing lower leg/feet or draw an artificial support/chair. Preserve the source's existing lower crop and detailed painted anime style. Place the entire extracted subject, overhead weapon tip, ribbons and halo comfortably inside a transparent canvas with at least 10 percent EMPTY padding ALL sides including below the crop. Actual RGBA transparency, no scenery, white rectangle, black fill, checkerboard, ground shadow or text."
+  }
+]

@@ -1,0 +1,178 @@
+{
+  "version": "1.1.1",
+  "tool": "built-in image_gen",
+  "originalReferencesUntouched": true,
+  "originalAndProcessedSevenImagesPreserved": true,
+  "totalWalkCells": 32,
+  "totalClickCells": 32,
+  "note": "64 cells include repeated neutral poses; not 64 unique hand-drawn frames. AI details are approximate; no new turn or multi-view animation.",
+  "prompts": [
+    "docs/character-motion-prompts-v2.json",
+    "docs/character-motion-spacing-prompts.json"
+  ],
+  "forms": [
+    {
+      "id": "ex1",
+      "reference": "resources/originals/精一.png",
+      "preservedCutout": "resources/sprites/03_ex1.png",
+      "sourceKind": "AI-redrawn key cels, generated with built-in image_gen",
+      "inferredParts": [
+        "lower legs",
+        "boots",
+        "unseen clothing details"
+      ],
+      "notOfficialOrHandAnimated": true,
+      "idle": "neutral AI cel with procedural breathing and gentle sway",
+      "walk": "8 user-reviewed AI cels, distance-driven held playback with mirrored travel direction",
+      "click": "two 4-cel gestures, including repeated neutral cels",
+      "walkCycleSeconds": 0.8,
+      "reactionDurationSeconds": 0.7,
+      "atlases": [
+        {
+          "clip": "actions",
+          "file": "resources/animations/ex1/actions-v1.png",
+          "columns": 4,
+          "rows": 2,
+          "cells": 8,
+          "sha256": "7BD0BDDDD58E7203AEEEC2FEC0D19F61AD5BE598B743131A5C8B08FEFD71A4AA"
+        },
+        {
+          "clip": "walk",
+          "file": "resources/animations/ex1/walk-approved-v2.png",
+          "columns": 4,
+          "rows": 2,
+          "cells": 8,
+          "sha256": "988C1088349C40D793687BE1D8A1B634751CF6E1853BA4D9252AD54707CFA7BE"
+        }
+      ],
+      "review": {
+        "message": "勉强可以了，继续",
+        "acceptedAt": "2026-10-20T05:16:29.2931026+08:00",
+        "scope": "ex1 eight-cel candidate and its integration; no claim of polished or official animation"
+      },
+      "cycleDistanceDip": 84,
+      "promptRecord": "docs/approved-walk-source/generation-record.json"
+    },
+    {
+      "id": "ex2",
+      "reference": "resources/originals/精二.png",
+      "preservedCutout": "resources/sprites/04_ex2.png",
+      "sourceKind": "AI-redrawn key cels, generated with built-in image_gen",
+      "inferredParts": [
+        "lower legs",
+        "boots",
+        "unseen clothing details"
+      ],
+      "notOfficialOrHandAnimated": true,
+      "idle": "neutral AI cel with procedural breathing and gentle sway",
+      "walk": "8 held articulated key cels, no limb crossfade",
+      "click": "two 4-cel gestures, including repeated neutral cels",
+      "walkCycleSeconds": 0.92,
+      "reactionDurationSeconds": 0.8,
+      "atlases": [
+        {
+          "clip": "actions",
+          "file": "resources/animations/ex2/actions-v1.png",
+          "columns": 4,
+          "rows": 2,
+          "cells": 8,
+          "sha256": "B7E1F571BF4DB127C8D125D538A7019BC8A92ADC96A7C7FC13AF07C82E26A108"
+        },
+        {
+          "clip": "walk",
+          "file": "resources/animations/ex2/walk-v1.png",
+          "columns": 4,
+          "rows": 2,
+          "cells": 8,
+          "sha256": "D33E9AFD673578826F836943BE32564947FAA5DA7D5ED64E8F09A4DCDA5E0F00"
+        }
+      ]
+    },
+    {
+      "id": "alter-ex1",
+      "reference": "resources/originals/异格精一.png",
+      "preservedCutout": "resources/sprites/05_alter_ex1.png",
+      "sourceKind": "AI-redrawn key cels, generated with built-in image_gen",
+      "inferredParts": [
+        "lower legs",
+        "boots",
+        "unseen clothing details"
+      ],
+      "notOfficialOrHandAnimated": true,
+      "idle": "neutral AI cel with procedural breathing and gentle sway",
+      "walk": "8 held articulated key cels, no limb crossfade",
+      "click": "two 4-cel gestures, including repeated neutral cels",
+      "walkCycleSeconds": 0.78,
+      "reactionDurationSeconds": 0.6599999999999999,
+      "atlases": [
+        {
+          "clip": "actions",
+          "file": "resources/animations/alter-ex1/actions-v1.png",
+          "columns": 4,
+          "rows": 2,
+          "cells": 8,
+          "sha256": "FFC510412365BADD360B6DD2B0D2AFD96ED9C4BD385BC00341B31D601B5C41BA"
+        },
+        {
+          "clip": "walk",
+          "file": "resources/animations/alter-ex1/walk-v1.png",
+          "columns": 2,
+          "rows": 2,
+          "cells": 4,
+          "sha256": "133629F55CDAF693E2ADA77C5418E433C940719E753E7E94335EAB3C38D2BFBA"
+        },
+        {
+          "clip": "walkContinuation",
+          "file": "resources/animations/alter-ex1/walk-b-v1.png",
+          "columns": 2,
+          "rows": 2,
+          "cells": 4,
+          "sha256": "34A8017231788C668E50CB57E064101DB39E5EE62F4E0E25FEE9ED7348FCD8CC"
+        }
+      ]
+    },
+    {
+      "id": "alter-ex2",
+      "reference": "resources/originals/异格精二.png",
+      "preservedCutout": "resources/sprites/06_alter_ex2.png",
+      "sourceKind": "AI-redrawn key cels, generated with built-in image_gen",
+      "inferredParts": [
+        "lower legs",
+        "boots",
+        "unseen clothing details"
+      ],
+      "notOfficialOrHandAnimated": true,
+      "idle": "neutral AI cel with procedural breathing and gentle sway",
+      "walk": "8 held articulated key cels, no limb crossfade",
+      "click": "two 4-cel gestures, including repeated neutral cels",
+      "walkCycleSeconds": 1.0,
+      "reactionDurationSeconds": 0.86,
+      "atlases": [
+        {
+          "clip": "actions",
+          "file": "resources/animations/alter-ex2/actions-v1.png",
+          "columns": 4,
+          "rows": 2,
+          "cells": 8,
+          "sha256": "296E024941E0F47340DFB14A640016ADF6CA7306CD6EA2B41435966D208DE194"
+        },
+        {
+          "clip": "walk",
+          "file": "resources/animations/alter-ex2/walk-v1.png",
+          "columns": 2,
+          "rows": 2,
+          "cells": 4,
+          "sha256": "C8FFCC37484D89B07F45396D18C4D2F9393415C862BCE328A39C8AD4907CFCAA"
+        },
+        {
+          "clip": "walkContinuation",
+          "file": "resources/animations/alter-ex2/walk-b-v1.png",
+          "columns": 2,
+          "rows": 2,
+          "cells": 4,
+          "sha256": "19541BE4D023AFBA2B01CC8E7ACBD2648DFEFBDDD0387CA30BAD96ED2D4CBF97"
+        }
+      ]
+    }
+  ]
+}

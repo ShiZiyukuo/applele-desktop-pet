@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>WinExe</OutputType><TargetFramework>net8.0-windows</TargetFramework><UseWindowsForms>true</UseWindowsForms><AssemblyName>Applele</AssemblyName><ApplicationManifest>app.manifest</ApplicationManifest><Version>1.1.1</Version><Product>苹果乐 Windows 桌宠</Product><Description>已确认的精一八帧走动与距离同步播放。</Description></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../Applele.Core/Applele.Core.csproj"/>
+    <Content Include="../../resources/**/*"><Link>resources/%(RecursiveDir)%(Filename)%(Extension)</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
+    <Content Include="../../config/**/*"><Link>config/%(RecursiveDir)%(Filename)%(Extension)</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
+  </ItemGroup>
+</Project>
